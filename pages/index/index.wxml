@@ -14,7 +14,7 @@
                     <view class="news-info">
                         <view class="news-title">{{item.title}}</view>
                         <view class="news-detail">
-                            <view>{{item.source}}</view>
+                            <view>{{item.source == '' ? '腾讯网' : item.source}}</view>
                             <view>{{item.date}}</view>                    
                         </view>
                     </view>

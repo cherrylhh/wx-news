@@ -48,7 +48,6 @@ Page({
                 type: type
             },
             success: res => {
-                console.log(res)
                 let result = res.data.result;
                 result.map(i => {
                   i.date = dateFilter.formatTime(i.date)
@@ -70,7 +69,6 @@ Page({
             this.setData({
               currentTab: e.currentTarget.dataset.current
             })
-            console.log(e)
             this.getNewsCategories(e.currentTarget.dataset.id)
         }
     },
